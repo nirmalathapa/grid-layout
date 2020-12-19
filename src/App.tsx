@@ -4,18 +4,22 @@ import Grid from "./component/Grid/Grid";
 
 function App() {
   return (
-    <div className="App">
-      <Grid container>
-        <Grid item>
+    <div className="App" style={{margin: "26px"}}>
+      <Grid container spacing="sm">
+        <Grid item cols={6}>
           <Box>Box1</Box>
         </Grid>
 
-        <Grid item>
+        <Grid item cols={6}>
           <Box>Box2</Box>
         </Grid>
 
-        <Grid item>
+        <Grid item cols={6}>
           <Box>Box3</Box>
+        </Grid>
+
+        <Grid item cols={6}>
+          <Box>Box4</Box>
         </Grid>
       </Grid>
     </div>
